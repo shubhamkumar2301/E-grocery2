@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    Background-color: #FBF9F1;
+    overflow-x: hidden; 
+}
+
+.navbar {
+    background-color: #92c7cf;
+    padding: 10px 20px;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    position: sticky;
+    top: 0;
+}
+.navbar .logo h2 {
+    margin: 0;
+    font-size: 25px;
+    font-style: italic;
+    color: #ff0000;
+    border-radius: 2px;
+   
+}
+.menu a {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000000;
+    padding: 12px;
+}
+.menu-icon{
+    display:none;
+}
+.menu-icon i{
+    color: white;
+    font-size: 25px;
+}
+@media (max-width:480px){
+    .menu a {
+        position: relative;
+        justify-items:right;
+        top: 117px;
+        left: 0;
+        right: 0;
+        background-color: #92c7cf;
+        gap:0;
+    }
+    .menu a{
+        padding: 10px 80px;
+        display: flex;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .menu-icon i{
+        color: black;
+    }
+    .icons a i{
+        padding: 5px;
+    }   
+}
+.menu a:hover {
+    color: #28a745;
+    cursor: pointer;
+}
+
+.icons i {
+    font-size: 20px;
+    color: #000000;
+    padding: 10px 10px;
+}
+
+.icons i:hover {
+    color: #28a745;
+}
+
+.packedDelight {
+    text-align: center;
+    padding: 20px;
+}
+
+.packedDelight h2 {
+    text-shadow: 3px 4px #d4d4d4ac;
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #AAD7D9;
+    -webkit-text-stroke: 1px #787777;
+}
+
+.product-section {
+    padding: 40px;
+    background-color: #92c7cf;
+    margin: 20px 55px 20px 55px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.add-button {
+    background-color: #92c7cf;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 15px;
+    right: 25%;
+}
+
+.add-button a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Resetting margins and paddings */
+
+    
+/* Individual product card styling */
+
+/* Footer styles */
+.footer {
+    width: 100%;
+    background-color: #e5e1da;
+    padding: 20px 0;
+}
+
+.main {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+.main div h3 {
+    padding-top: 10px;
+}
+
+.third a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+}
+
+.fourth input {
+    text-decoration: none;
+}
+
+.fourth i {
+    color: #000000;
+    padding: 10px;
+}
+
+
+
+/* Medium Devices (tablets, 481px and up) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .navbar .logo h1 {
+        font-size: 20px;
+    }
+ 
+    .menu a {
+        font-size: 14px;
+    }
+    .icons i {
+        font-size: 18px;
+    }
+    .packedDelight h2 {
+        font-size: 40px;
+    }
+    .main-card {
+        padding: 40px;
+    }
+    .product {
+        width: 200px;
+    }
+}
+
+/* Large Devices (desktops, 769px and up) */
+@media (min-width: 769px) {
+    body {
+        font-size: 16px;
+    }
+    .navbar .logo h1 {
+        font-size: 32px;
+    }
+    .menu a {
+        font-size: 16px;
+    }
+    .icons i {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./order.css">
+</head>
+
+<body>
+    <center>
+        <h3>Order Details</h3>
+    </center>
+    <div class="cont">
+        <div class="container">
+            <form id="myform">
+                <br><br>
+                <b>Name</b>
+                <input type="text" placeholder="enter your name" size="80px" required class="name">
+                <br><br>
+                <b>Mobile No.</b><br>
+                <input type="number" class="num">
+                <br><br>
+                <b>Shipping Address</b><br>
+                <textarea name="txt" id="area" placeholder="enter your address" required></textarea>
+                <br><br>
+                <div class="form-group">
+                    <label for="product">Product</label>
+                    <br>
+                    <input type="text" id="product" name="product">
+                </div>
+                <br>
+                <div class="price">
+                    <label for="product">Price</label>
+                    <br>
+                    <input type="text" id="product" name="price">
+                </div>
+                <br><br>
+                <b>Quantity</b>
+                <input type="number" class="num">
+                <br><br>
+                <b>Payment Method</b><br>
+                <select id="pay" required>
+            <option value="select" disabled selected>select</option>
+            <option value="Paytm">Paytm</option>
+            <option value="GPay">GPay</option>
+            <option value="cod">COD</option>
+           </select>
+                <br><br><br>
+                <button type="submit">Place Order</button>
+            </form>
+
+        </div>
+    </div>
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const productField = document.getElementById('product');
+            const productName = getQueryParam('product');
+            if (productName) {
+                productField.value = decodeURIComponent(productName);
+            }
+        });
+
+        document.getElementById('myform').addEventListener('submit', function(event) {
+            const name = document.getElementById('name').value;
+            const mobile = document.getElementById('mobno').value;
+            const address = document.getElementById('address').value;
+
+            if (!name || !mobile || !address) {
+                alert('Please fill in all required fields.');
+                event.preventDefault();
+            }
+        });
+        const orderForm = document.getElementById('myform');
+        orderForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            window.location.href = 'Oplaced.html';
+        });
+    </script>
+</body>
+
+</html>
