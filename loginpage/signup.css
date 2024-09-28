@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./r.jpg');
+
+}
+
+.Container {
+
+
+    display: flex;
+    gap: 50px;
+  
+
+
+}
+
+.con {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 90vh;
+    width: 180vh;
+
+
+}
+
+
+h2 {
+    font-family: "Kadwa", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(14, 15, 15);
+    padding-bottom: 8px;
+    border-bottom: 1px solid silver;
+
+}
+
+.content {
+
+    padding-top: 0px;
+
+
+}
+
+.content1 {
+    padding-top: 0px;
+
+}
+
+.input-box {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    column-gap: 10%;
+
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: "Kadwa", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: grey;
+}
+
+.form-input {
+
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 250px;
+    padding-left: 10px;
+    font-family: "Kadwa", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: red;
+    
+    
+
+}
+input{
+    border: 2px solid #AAD7D9;
+
+    
+}
+::placeholder{
+
+    color: #AAD7D9; 
+}
+
+#form1 {
+
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 807px;
+    padding-left: 10px;
+
+}
+
+#label1 {
+    /* display: block; */
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: "Kadwa", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: grey;
+}
+
+.b1 {
+    display: flex;
+    gap: 50px;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background-color: #AAD7D9;
+    color: white;
+    font-style: bold;
+    
+    
+}
+
+.p1 {
+    font-family: "Kadwa", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+button{
+    border: 2px solid #AAD7D9; 
+}
+.p2{
+    font-family: "Kadwa", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: gray;
+}
+.p4{
+
+    font-family: "Kadwa", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: gray;
+    padding-bottom: 100px;
+    padding-left: 10px;
+
+}
